@@ -1,9 +1,9 @@
-name: "my-website"
+name: "Microclimates tests"
 output_dir: "docs"
 navbar:
-  title: "My Website"
+  title: "Microclimates"
   left:
-    - text: "Home"
+    - text: "First test"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "TMS4 instructions"
+      href: TMS4instruc.html

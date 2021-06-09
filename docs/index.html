@@ -11,7 +11,7 @@
 
 
 
-<title>My Website</title>
+<title>First test</title>
 
 <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -278,15 +278,15 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">My Website</a>
+      <a class="navbar-brand" href="index.html">Microclimates</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">First test</a>
 </li>
 <li>
-  <a href="about.html">About</a>
+  <a href="TMS4instruc.html">TMS4 instructions</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -300,19 +300,516 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">My Website</h1>
+<h1 class="title toc-ignore">First test</h1>
 
 </div>
 
 
-<p>Hello, Website!</p>
-<p>For more information about simple R Markdown websites, please read the documentation at <a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="uri">https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html</a>.</p>
-<p>Please also note that simple R Markdown sites are <em>not</em> based on <strong>blogdown</strong>. They are probably good for websites with only a few Rmd documents. For larger-scale and more sophisticated websites (such as blogs), you may want to use <strong>blogdown</strong> instead: <a href="https://github.com/rstudio/blogdown" class="uri">https://github.com/rstudio/blogdown</a>.</p>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="index_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div id="data-exploration" class="section level1">
+<h1>Data exploration</h1>
+<!-- Using R software is a great way to visualize the temperature and soil moisture data by years, months and days.  -->
+<p>Here are basic graphics the difference in measurements between dataloggers and the difference between temperature 1, 2 and 3 (<em>i.e.</em>, soil, ground and aboveground).</p>
+<div id="soil-middle-and-top-temperature-by-each-datalogger" class="section level2">
+<h2>Soil, middle and top temperature by each datalogger</h2>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-2.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-3.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-4.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-5.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-6.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-7.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-8.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-9.png" width="672" /></p>
+</div>
+<div id="measurements-between-dataloggers" class="section level2 tabset">
+<h2 class="tabset">Measurements between dataloggers</h2>
+<div id="soil-temperature" class="section level3">
+<h3>Soil temperature</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="middle-temperature" class="section level3">
+<h3>Middle temperature</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="top-temperature" class="section level3">
+<h3>Top temperature</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="soil-moisture" class="section level3">
+<h3>Soil moisture</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>
+</div>
+<div id="measurements-between-experimental-treatments" class="section level2 tabset">
+<h2 class="tabset">Measurements between experimental treatments</h2>
+<div id="soil-temperature-1" class="section level3">
+<h3>Soil temperature</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="middle-temperature-1" class="section level3">
+<h3>Middle temperature</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+<div id="top-temperature-1" class="section level3">
+<h3>Top temperature</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+<div id="soil-moisture-1" class="section level3">
+<h3>Soil Moisture</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+</div>
+</div>
+<div id="soil-temperature-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
+<h2 class="tabset">Soil temperature between dataloggers in the same treatment</h2>
+<div id="pasto" class="section level3">
+<h3>Pasto</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+</div>
+<div id="muro" class="section level3">
+<h3>Muro</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+<div id="palma" class="section level3">
+<h3>Palma</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+</div>
+<div id="arbustos" class="section level3">
+<h3>Arbustos</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+</div>
+</div>
+<div id="middle-temperature-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
+<h2 class="tabset">Middle temperature between dataloggers in the same treatment</h2>
+<div id="pasto-1" class="section level3">
+<h3>Pasto</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+</div>
+<div id="muro-1" class="section level3">
+<h3>Muro</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+</div>
+<div id="palma-1" class="section level3">
+<h3>Palma</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+</div>
+<div id="arbustos-1" class="section level3">
+<h3>Arbustos</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+</div>
+</div>
+<div id="top-temperature-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
+<h2 class="tabset">Top temperature between dataloggers in the same treatment</h2>
+<div id="pasto-2" class="section level3">
+<h3>Pasto</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+</div>
+<div id="muro-2" class="section level3">
+<h3>Muro</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+</div>
+<div id="palma-2" class="section level3">
+<h3>Palma</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+</div>
+<div id="arbustos-2" class="section level3">
+<h3>Arbustos</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+</div>
+</div>
+<div id="soil-moisture-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
+<h2 class="tabset">Soil moisture between dataloggers in the same treatment</h2>
+<div id="pasto-3" class="section level3">
+<h3>Pasto</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+</div>
+<div id="muro-3" class="section level3">
+<h3>Muro</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+</div>
+<div id="palma-3" class="section level3">
+<h3>Palma</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+</div>
+<div id="arbustos-3" class="section level3">
+<h3>Arbustos</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<!-- # Temperature and soil moisture time variation -->
+<!-- ## Mean month temperature and soil moisture {.tabset} -->
+<!-- ```{r,include=FALSE} -->
+<!-- ##Separar por fechas -->
+<!-- library(stringr) -->
+<!-- t1<-str_split_fixed(datum$Date,"[.]",3) -->
+<!-- t2<-str_split_fixed(t1[,3]," ",2) -->
+<!-- dat<-data.frame(datum,t1[,1:2],t2) -->
+<!-- colnames(dat)<-c("ID","Date","TimeZone","Temp1","Temp2","Temp3","SoilMoisture","Shake","ErrorFlag","Unknown","Sensor","Year","Month","Day","Hour") -->
+<!-- dat$Month<-as.numeric(dat$Month) -->
+<!-- dat$Day<-as.numeric(dat$Day) -->
+<!-- str(dat) -->
+<!-- ## dat<-dat[dat$Year=="2020",] -->
+<!-- ## dat<-dat[dat$Year=="2021",] -->
+<!-- ``` -->
+<!-- ### Soil temperature -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tmm<-data.frame(sdMonth=tapply(dat$Temp1,dat$Month,sd),MeanMonth=tapply(dat$Temp1,dat$Month,mean),Month=row.names(tapply(dat$Temp1,dat$Month,mean))) -->
+<!-- tmm$Month<-as.numeric(tmm$Month) -->
+<!-- plot(tmm$Month,tmm$MeanMonth,type="l",ylim=range(c(tmm$MeanMonth-tmm$sdMonth,tmm$MeanMonth+tmm$sdMonth)),xlab="Month",ylab="Soil temperature") -->
+<!-- arrows(tmm$Month,tmm$MeanMonth-tmm$sdMonth,tmm$Month,tmm$MeanMonth+tmm$sdMonth, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### Middle temperature -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tmm<-data.frame(sdMonth=tapply(dat$Temp2,dat$Month,sd),MeanMonth=tapply(dat$Temp2,dat$Month,mean),Month=row.names(tapply(dat$Temp2,dat$Month,mean))) -->
+<!-- tmm$Month<-as.numeric(tmm$Month) -->
+<!-- plot(tmm$Month,tmm$MeanMonth,type="l",ylim=range(c(tmm$MeanMonth-tmm$sdMonth,tmm$MeanMonth+tmm$sdMonth)),xlab="Month",ylab="Middle temperature") -->
+<!-- arrows(tmm$Month,tmm$MeanMonth-tmm$sdMonth,tmm$Month,tmm$MeanMonth+tmm$sdMonth, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### Top temperature -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tmm<-data.frame(sdMonth=tapply(dat$Temp2,dat$Month,sd),MeanMonth=tapply(dat$Temp2,dat$Month,mean),Month=row.names(tapply(dat$Temp2,dat$Month,mean))) -->
+<!-- tmm$Month<-as.numeric(tmm$Month) -->
+<!-- plot(tmm$Month,tmm$MeanMonth,type="l",ylim=range(c(tmm$MeanMonth-tmm$sdMonth,tmm$MeanMonth+tmm$sdMonth)),xlab="Month",ylab="Middle temperature") -->
+<!-- arrows(tmm$Month,tmm$MeanMonth-tmm$sdMonth,tmm$Month,tmm$MeanMonth+tmm$sdMonth, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### Soil moisture -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tmm<-data.frame(sdMonth=tapply(dat$SoilMoisture,dat$Month,sd),MeanMonth=tapply(dat$SoilMoisture,dat$Month,mean),Month=row.names(tapply(dat$SoilMoisture,dat$Month,mean))) -->
+<!-- tmm$Month<-as.numeric(tmm$Month) -->
+<!-- plot(tmm$Month,tmm$MeanMonth,type="l",ylim=range(c(tmm$MeanMonth-tmm$sdMonth,tmm$MeanMonth+tmm$sdMonth)),xlab="Month",ylab="Temperature 1") -->
+<!-- arrows(tmm$Month,tmm$MeanMonth-tmm$sdMonth,tmm$Month,tmm$MeanMonth+tmm$sdMonth, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ## Mean daily soil temperature {.tabset} -->
+<!-- ### January -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm01<-data.frame(sdDay=tapply(dat[dat$Month=="1",]$Temp1,dat[dat$Month=="1",]$Day,sd),MeanDay=tapply(dat[dat$Month=="1",]$Temp1,dat[dat$Month=="1",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="1",]$Temp1,dat[dat$Month=="1",]$Day,mean))) -->
+<!-- tdm01$Day<-as.numeric(tdm01$Day) -->
+<!-- plot(tdm01$Day,tdm01$MeanDay,type="l",ylim=range(c(tdm01$MeanDay-tdm01$sdDay,tdm01$MeanDay+tdm01$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm01$Day,tdm01$MeanDay-tdm01$sdDay,tdm01$Day,tdm01$MeanDay+tdm01$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### February -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm02<-data.frame(sdDay=tapply(dat[dat$Month=="2",]$Temp1,dat[dat$Month=="2",]$Day,sd),MeanDay=tapply(dat[dat$Month=="2",]$Temp1,dat[dat$Month=="2",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="2",]$Temp1,dat[dat$Month=="2",]$Day,mean))) -->
+<!-- tdm02$Day<-as.numeric(tdm02$Day) -->
+<!-- plot(tdm02$Day,tdm02$MeanDay,type="l",ylim=range(c(tdm02$MeanDay-tdm02$sdDay,tdm02$MeanDay+tdm02$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm02$Day,tdm02$MeanDay-tdm02$sdDay,tdm02$Day,tdm02$MeanDay+tdm02$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### March -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm03<-data.frame(sdDay=tapply(dat[dat$Month=="3",]$Temp1,dat[dat$Month=="3",]$Day,sd),MeanDay=tapply(dat[dat$Month=="3",]$Temp1,dat[dat$Month=="3",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="3",]$Temp1,dat[dat$Month=="3",]$Day,mean))) -->
+<!-- tdm03$Day<-as.numeric(tdm03$Day) -->
+<!-- plot(tdm03$Day,tdm03$MeanDay,type="l",ylim=range(c(tdm03$MeanDay-tdm03$sdDay,tdm03$MeanDay+tdm03$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm03$Day,tdm03$MeanDay-tdm03$sdDay,tdm03$Day,tdm03$MeanDay+tdm03$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### April -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm04<-data.frame(sdDay=tapply(dat[dat$Month=="4",]$Temp1,dat[dat$Month=="4",]$Day,sd),MeanDay=tapply(dat[dat$Month=="4",]$Temp1,dat[dat$Month=="4",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="4",]$Temp1,dat[dat$Month=="4",]$Day,mean))) -->
+<!-- tdm04$Day<-as.numeric(tdm04$Day) -->
+<!-- plot(tdm04$Day,tdm04$MeanDay,type="l",ylim=range(c(tdm04$MeanDay-tdm04$sdDay,tdm04$MeanDay+tdm04$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm04$Day,tdm04$MeanDay-tdm04$sdDay,tdm04$Day,tdm04$MeanDay+tdm04$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### May -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm05<-data.frame(sdDay=tapply(dat[dat$Month=="5",]$Temp1,dat[dat$Month=="5",]$Day,sd),MeanDay=tapply(dat[dat$Month=="5",]$Temp1,dat[dat$Month=="5",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="5",]$Temp1,dat[dat$Month=="5",]$Day,mean))) -->
+<!-- tdm05$Day<-as.numeric(tdm05$Day) -->
+<!-- plot(tdm05$Day,tdm05$MeanDay,type="l",ylim=range(c(tdm05$MeanDay-tdm05$sdDay,tdm05$MeanDay+tdm05$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm05$Day,tdm05$MeanDay-tdm05$sdDay,tdm05$Day,tdm05$MeanDay+tdm05$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### June -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm06<-data.frame(sdDay=tapply(dat[dat$Month=="6",]$Temp1,dat[dat$Month=="6",]$Day,sd),MeanDay=tapply(dat[dat$Month=="6",]$Temp1,dat[dat$Month=="6",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="6",]$Temp1,dat[dat$Month=="6",]$Day,mean))) -->
+<!-- tdm06$Day<-as.numeric(tdm06$Day) -->
+<!-- plot(tdm06$Day,tdm06$MeanDay,type="l",ylim=range(c(tdm06$MeanDay-tdm06$sdDay,tdm06$MeanDay+tdm06$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm06$Day,tdm06$MeanDay-tdm06$sdDay,tdm06$Day,tdm06$MeanDay+tdm06$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### July -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm07<-data.frame(sdDay=tapply(dat[dat$Month=="7",]$Temp1,dat[dat$Month=="7",]$Day,sd),MeanDay=tapply(dat[dat$Month=="7",]$Temp1,dat[dat$Month=="7",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="7",]$Temp1,dat[dat$Month=="7",]$Day,mean))) -->
+<!-- tdm07$Day<-as.numeric(tdm07$Day) -->
+<!-- plot(tdm07$Day,tdm07$MeanDay,type="l",ylim=range(c(tdm07$MeanDay-tdm07$sdDay,tdm07$MeanDay+tdm07$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm07$Day,tdm07$MeanDay-tdm07$sdDay,tdm07$Day,tdm07$MeanDay+tdm07$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### August -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm08<-data.frame(sdDay=tapply(dat[dat$Month=="8",]$Temp1,dat[dat$Month=="8",]$Day,sd),MeanDay=tapply(dat[dat$Month=="8",]$Temp1,dat[dat$Month=="8",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="8",]$Temp1,dat[dat$Month=="8",]$Day,mean))) -->
+<!-- tdm08$Day<-as.numeric(tdm08$Day) -->
+<!-- plot(tdm08$Day,tdm08$MeanDay,type="l",ylim=range(c(tdm08$MeanDay-tdm08$sdDay,tdm08$MeanDay+tdm08$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm08$Day,tdm08$MeanDay-tdm08$sdDay,tdm08$Day,tdm08$MeanDay+tdm08$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### September -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm09<-data.frame(sdDay=tapply(dat[dat$Month=="9",]$Temp1,dat[dat$Month=="9",]$Day,sd),MeanDay=tapply(dat[dat$Month=="9",]$Temp1,dat[dat$Month=="9",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="9",]$Temp1,dat[dat$Month=="9",]$Day,mean))) -->
+<!-- tdm09$Day<-as.numeric(tdm09$Day) -->
+<!-- plot(tdm09$Day,tdm09$MeanDay,type="l",ylim=range(c(tdm09$MeanDay-tdm09$sdDay,tdm09$MeanDay+tdm09$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm09$Day,tdm09$MeanDay-tdm09$sdDay,tdm09$Day,tdm09$MeanDay+tdm09$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### October -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm10<-data.frame(sdDay=tapply(dat[dat$Month=="10",]$Temp1,dat[dat$Month=="10",]$Day,sd),MeanDay=tapply(dat[dat$Month=="10",]$Temp1,dat[dat$Month=="10",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="10",]$Temp1,dat[dat$Month=="10",]$Day,mean))) -->
+<!-- tdm10$Day<-as.numeric(tdm10$Day) -->
+<!-- plot(tdm10$Day,tdm10$MeanDay,type="l",ylim=range(c(tdm10$MeanDay-tdm10$sdDay,tdm10$MeanDay+tdm10$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm10$Day,tdm10$MeanDay-tdm10$sdDay,tdm10$Day,tdm10$MeanDay+tdm10$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### November -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm11<-data.frame(sdDay=tapply(dat[dat$Month=="11",]$Temp1,dat[dat$Month=="11",]$Day,sd),MeanDay=tapply(dat[dat$Month=="11",]$Temp1,dat[dat$Month=="11",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="11",]$Temp1,dat[dat$Month=="11",]$Day,mean))) -->
+<!-- tdm11$Day<-as.numeric(tdm11$Day) -->
+<!-- plot(tdm11$Day,tdm11$MeanDay,type="l",ylim=range(c(tdm11$MeanDay-tdm11$sdDay,tdm11$MeanDay+tdm11$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm11$Day,tdm11$MeanDay-tdm11$sdDay,tdm11$Day,tdm11$MeanDay+tdm11$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### December -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm12<-data.frame(sdDay=tapply(dat[dat$Month=="12",]$Temp1,dat[dat$Month=="12",]$Day,sd),MeanDay=tapply(dat[dat$Month=="12",]$Temp1,dat[dat$Month=="12",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="12",]$Temp1,dat[dat$Month=="12",]$Day,mean))) -->
+<!-- tdm12$Day<-as.numeric(tdm12$Day) -->
+<!-- plot(tdm12$Day,tdm12$MeanDay,type="l",ylim=range(c(tdm12$MeanDay-tdm12$sdDay,tdm12$MeanDay+tdm12$sdDay)),xlab="Day",ylab="Soil temperature") -->
+<!-- arrows(tdm12$Day,tdm12$MeanDay-tdm12$sdDay,tdm12$Day,tdm12$MeanDay+tdm12$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ## Mean daily middle temperature {.tabset} -->
+<!-- ### January -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm01<-data.frame(sdDay=tapply(dat[dat$Month=="1",]$Temp2,dat[dat$Month=="1",]$Day,sd),MeanDay=tapply(dat[dat$Month=="1",]$Temp2,dat[dat$Month=="1",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="1",]$Temp2,dat[dat$Month=="1",]$Day,mean))) -->
+<!-- tdm01$Day<-as.numeric(tdm01$Day) -->
+<!-- plot(tdm01$Day,tdm01$MeanDay,type="l",ylim=range(c(tdm01$MeanDay-tdm01$sdDay,tdm01$MeanDay+tdm01$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm01$Day,tdm01$MeanDay-tdm01$sdDay,tdm01$Day,tdm01$MeanDay+tdm01$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### February -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm02<-data.frame(sdDay=tapply(dat[dat$Month=="2",]$Temp2,dat[dat$Month=="2",]$Day,sd),MeanDay=tapply(dat[dat$Month=="2",]$Temp2,dat[dat$Month=="2",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="2",]$Temp2,dat[dat$Month=="2",]$Day,mean))) -->
+<!-- tdm02$Day<-as.numeric(tdm02$Day) -->
+<!-- plot(tdm02$Day,tdm02$MeanDay,type="l",ylim=range(c(tdm02$MeanDay-tdm02$sdDay,tdm02$MeanDay+tdm02$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm02$Day,tdm02$MeanDay-tdm02$sdDay,tdm02$Day,tdm02$MeanDay+tdm02$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### March -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm03<-data.frame(sdDay=tapply(dat[dat$Month=="3",]$Temp2,dat[dat$Month=="3",]$Day,sd),MeanDay=tapply(dat[dat$Month=="3",]$Temp2,dat[dat$Month=="3",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="3",]$Temp2,dat[dat$Month=="3",]$Day,mean))) -->
+<!-- tdm03$Day<-as.numeric(tdm03$Day) -->
+<!-- plot(tdm03$Day,tdm03$MeanDay,type="l",ylim=range(c(tdm03$MeanDay-tdm03$sdDay,tdm03$MeanDay+tdm03$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm03$Day,tdm03$MeanDay-tdm03$sdDay,tdm03$Day,tdm03$MeanDay+tdm03$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### April -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm04<-data.frame(sdDay=tapply(dat[dat$Month=="4",]$Temp2,dat[dat$Month=="4",]$Day,sd),MeanDay=tapply(dat[dat$Month=="4",]$Temp2,dat[dat$Month=="4",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="4",]$Temp2,dat[dat$Month=="4",]$Day,mean))) -->
+<!-- tdm04$Day<-as.numeric(tdm04$Day) -->
+<!-- plot(tdm04$Day,tdm04$MeanDay,type="l",ylim=range(c(tdm04$MeanDay-tdm04$sdDay,tdm04$MeanDay+tdm04$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm04$Day,tdm04$MeanDay-tdm04$sdDay,tdm04$Day,tdm04$MeanDay+tdm04$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### May -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm05<-data.frame(sdDay=tapply(dat[dat$Month=="5",]$Temp2,dat[dat$Month=="5",]$Day,sd),MeanDay=tapply(dat[dat$Month=="5",]$Temp2,dat[dat$Month=="5",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="5",]$Temp2,dat[dat$Month=="5",]$Day,mean))) -->
+<!-- tdm05$Day<-as.numeric(tdm05$Day) -->
+<!-- plot(tdm05$Day,tdm05$MeanDay,type="l",ylim=range(c(tdm05$MeanDay-tdm05$sdDay,tdm05$MeanDay+tdm05$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm05$Day,tdm05$MeanDay-tdm05$sdDay,tdm05$Day,tdm05$MeanDay+tdm05$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### June -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm06<-data.frame(sdDay=tapply(dat[dat$Month=="6",]$Temp2,dat[dat$Month=="6",]$Day,sd),MeanDay=tapply(dat[dat$Month=="6",]$Temp2,dat[dat$Month=="6",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="6",]$Temp2,dat[dat$Month=="6",]$Day,mean))) -->
+<!-- tdm06$Day<-as.numeric(tdm06$Day) -->
+<!-- plot(tdm06$Day,tdm06$MeanDay,type="l",ylim=range(c(tdm06$MeanDay-tdm06$sdDay,tdm06$MeanDay+tdm06$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm06$Day,tdm06$MeanDay-tdm06$sdDay,tdm06$Day,tdm06$MeanDay+tdm06$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### July -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm07<-data.frame(sdDay=tapply(dat[dat$Month=="7",]$Temp2,dat[dat$Month=="7",]$Day,sd),MeanDay=tapply(dat[dat$Month=="7",]$Temp2,dat[dat$Month=="7",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="7",]$Temp2,dat[dat$Month=="7",]$Day,mean))) -->
+<!-- tdm07$Day<-as.numeric(tdm07$Day) -->
+<!-- plot(tdm07$Day,tdm07$MeanDay,type="l",ylim=range(c(tdm07$MeanDay-tdm07$sdDay,tdm07$MeanDay+tdm07$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm07$Day,tdm07$MeanDay-tdm07$sdDay,tdm07$Day,tdm07$MeanDay+tdm07$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### August -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm08<-data.frame(sdDay=tapply(dat[dat$Month=="8",]$Temp2,dat[dat$Month=="8",]$Day,sd),MeanDay=tapply(dat[dat$Month=="8",]$Temp2,dat[dat$Month=="8",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="8",]$Temp2,dat[dat$Month=="8",]$Day,mean))) -->
+<!-- tdm08$Day<-as.numeric(tdm08$Day) -->
+<!-- plot(tdm08$Day,tdm08$MeanDay,type="l",ylim=range(c(tdm08$MeanDay-tdm08$sdDay,tdm08$MeanDay+tdm08$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm08$Day,tdm08$MeanDay-tdm08$sdDay,tdm08$Day,tdm08$MeanDay+tdm08$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### September -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm09<-data.frame(sdDay=tapply(dat[dat$Month=="9",]$Temp2,dat[dat$Month=="9",]$Day,sd),MeanDay=tapply(dat[dat$Month=="9",]$Temp2,dat[dat$Month=="9",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="9",]$Temp2,dat[dat$Month=="9",]$Day,mean))) -->
+<!-- tdm09$Day<-as.numeric(tdm09$Day) -->
+<!-- plot(tdm09$Day,tdm09$MeanDay,type="l",ylim=range(c(tdm09$MeanDay-tdm09$sdDay,tdm09$MeanDay+tdm09$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm09$Day,tdm09$MeanDay-tdm09$sdDay,tdm09$Day,tdm09$MeanDay+tdm09$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### October -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm10<-data.frame(sdDay=tapply(dat[dat$Month=="10",]$Temp2,dat[dat$Month=="10",]$Day,sd),MeanDay=tapply(dat[dat$Month=="10",]$Temp2,dat[dat$Month=="10",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="10",]$Temp2,dat[dat$Month=="10",]$Day,mean))) -->
+<!-- tdm10$Day<-as.numeric(tdm10$Day) -->
+<!-- plot(tdm10$Day,tdm10$MeanDay,type="l",ylim=range(c(tdm10$MeanDay-tdm10$sdDay,tdm10$MeanDay+tdm10$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm10$Day,tdm10$MeanDay-tdm10$sdDay,tdm10$Day,tdm10$MeanDay+tdm10$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### November -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm11<-data.frame(sdDay=tapply(dat[dat$Month=="11",]$Temp2,dat[dat$Month=="11",]$Day,sd),MeanDay=tapply(dat[dat$Month=="11",]$Temp2,dat[dat$Month=="11",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="11",]$Temp2,dat[dat$Month=="11",]$Day,mean))) -->
+<!-- tdm11$Day<-as.numeric(tdm11$Day) -->
+<!-- plot(tdm11$Day,tdm11$MeanDay,type="l",ylim=range(c(tdm11$MeanDay-tdm11$sdDay,tdm11$MeanDay+tdm11$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm11$Day,tdm11$MeanDay-tdm11$sdDay,tdm11$Day,tdm11$MeanDay+tdm11$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### December -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm12<-data.frame(sdDay=tapply(dat[dat$Month=="12",]$Temp2,dat[dat$Month=="12",]$Day,sd),MeanDay=tapply(dat[dat$Month=="12",]$Temp2,dat[dat$Month=="12",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="12",]$Temp2,dat[dat$Month=="12",]$Day,mean))) -->
+<!-- tdm12$Day<-as.numeric(tdm12$Day) -->
+<!-- plot(tdm12$Day,tdm12$MeanDay,type="l",ylim=range(c(tdm12$MeanDay-tdm12$sdDay,tdm12$MeanDay+tdm12$sdDay)),xlab="Day",ylab="Middle temperature") -->
+<!-- arrows(tdm12$Day,tdm12$MeanDay-tdm12$sdDay,tdm12$Day,tdm12$MeanDay+tdm12$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ## Mean daily top temperature {.tabset} -->
+<!-- ### January -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm01<-data.frame(sdDay=tapply(dat[dat$Month=="1",]$Temp3,dat[dat$Month=="1",]$Day,sd),MeanDay=tapply(dat[dat$Month=="1",]$Temp3,dat[dat$Month=="1",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="1",]$Temp3,dat[dat$Month=="1",]$Day,mean))) -->
+<!-- tdm01$Day<-as.numeric(tdm01$Day) -->
+<!-- plot(tdm01$Day,tdm01$MeanDay,type="l",ylim=range(c(tdm01$MeanDay-tdm01$sdDay,tdm01$MeanDay+tdm01$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm01$Day,tdm01$MeanDay-tdm01$sdDay,tdm01$Day,tdm01$MeanDay+tdm01$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### February -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm02<-data.frame(sdDay=tapply(dat[dat$Month=="2",]$Temp3,dat[dat$Month=="2",]$Day,sd),MeanDay=tapply(dat[dat$Month=="2",]$Temp3,dat[dat$Month=="2",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="2",]$Temp3,dat[dat$Month=="2",]$Day,mean))) -->
+<!-- tdm02$Day<-as.numeric(tdm02$Day) -->
+<!-- plot(tdm02$Day,tdm02$MeanDay,type="l",ylim=range(c(tdm02$MeanDay-tdm02$sdDay,tdm02$MeanDay+tdm02$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm02$Day,tdm02$MeanDay-tdm02$sdDay,tdm02$Day,tdm02$MeanDay+tdm02$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### March -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm03<-data.frame(sdDay=tapply(dat[dat$Month=="3",]$Temp3,dat[dat$Month=="3",]$Day,sd),MeanDay=tapply(dat[dat$Month=="3",]$Temp3,dat[dat$Month=="3",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="3",]$Temp3,dat[dat$Month=="3",]$Day,mean))) -->
+<!-- tdm03$Day<-as.numeric(tdm03$Day) -->
+<!-- plot(tdm03$Day,tdm03$MeanDay,type="l",ylim=range(c(tdm03$MeanDay-tdm03$sdDay,tdm03$MeanDay+tdm03$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm03$Day,tdm03$MeanDay-tdm03$sdDay,tdm03$Day,tdm03$MeanDay+tdm03$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### April -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm04<-data.frame(sdDay=tapply(dat[dat$Month=="4",]$Temp3,dat[dat$Month=="4",]$Day,sd),MeanDay=tapply(dat[dat$Month=="4",]$Temp3,dat[dat$Month=="4",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="4",]$Temp3,dat[dat$Month=="4",]$Day,mean))) -->
+<!-- tdm04$Day<-as.numeric(tdm04$Day) -->
+<!-- plot(tdm04$Day,tdm04$MeanDay,type="l",ylim=range(c(tdm04$MeanDay-tdm04$sdDay,tdm04$MeanDay+tdm04$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm04$Day,tdm04$MeanDay-tdm04$sdDay,tdm04$Day,tdm04$MeanDay+tdm04$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### May -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm05<-data.frame(sdDay=tapply(dat[dat$Month=="5",]$Temp3,dat[dat$Month=="5",]$Day,sd),MeanDay=tapply(dat[dat$Month=="5",]$Temp3,dat[dat$Month=="5",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="5",]$Temp3,dat[dat$Month=="5",]$Day,mean))) -->
+<!-- tdm05$Day<-as.numeric(tdm05$Day) -->
+<!-- plot(tdm05$Day,tdm05$MeanDay,type="l",ylim=range(c(tdm05$MeanDay-tdm05$sdDay,tdm05$MeanDay+tdm05$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm05$Day,tdm05$MeanDay-tdm05$sdDay,tdm05$Day,tdm05$MeanDay+tdm05$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### June -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm06<-data.frame(sdDay=tapply(dat[dat$Month=="6",]$Temp3,dat[dat$Month=="6",]$Day,sd),MeanDay=tapply(dat[dat$Month=="6",]$Temp3,dat[dat$Month=="6",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="6",]$Temp3,dat[dat$Month=="6",]$Day,mean))) -->
+<!-- tdm06$Day<-as.numeric(tdm06$Day) -->
+<!-- plot(tdm06$Day,tdm06$MeanDay,type="l",ylim=range(c(tdm06$MeanDay-tdm06$sdDay,tdm06$MeanDay+tdm06$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm06$Day,tdm06$MeanDay-tdm06$sdDay,tdm06$Day,tdm06$MeanDay+tdm06$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### July -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm07<-data.frame(sdDay=tapply(dat[dat$Month=="7",]$Temp3,dat[dat$Month=="7",]$Day,sd),MeanDay=tapply(dat[dat$Month=="7",]$Temp3,dat[dat$Month=="7",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="7",]$Temp3,dat[dat$Month=="7",]$Day,mean))) -->
+<!-- tdm07$Day<-as.numeric(tdm07$Day) -->
+<!-- plot(tdm07$Day,tdm07$MeanDay,type="l",ylim=range(c(tdm07$MeanDay-tdm07$sdDay,tdm07$MeanDay+tdm07$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm07$Day,tdm07$MeanDay-tdm07$sdDay,tdm07$Day,tdm07$MeanDay+tdm07$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### August -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm08<-data.frame(sdDay=tapply(dat[dat$Month=="8",]$Temp3,dat[dat$Month=="8",]$Day,sd),MeanDay=tapply(dat[dat$Month=="8",]$Temp3,dat[dat$Month=="8",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="8",]$Temp3,dat[dat$Month=="8",]$Day,mean))) -->
+<!-- tdm08$Day<-as.numeric(tdm08$Day) -->
+<!-- plot(tdm08$Day,tdm08$MeanDay,type="l",ylim=range(c(tdm08$MeanDay-tdm08$sdDay,tdm08$MeanDay+tdm08$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm08$Day,tdm08$MeanDay-tdm08$sdDay,tdm08$Day,tdm08$MeanDay+tdm08$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### September -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm09<-data.frame(sdDay=tapply(dat[dat$Month=="9",]$Temp3,dat[dat$Month=="9",]$Day,sd),MeanDay=tapply(dat[dat$Month=="9",]$Temp3,dat[dat$Month=="9",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="9",]$Temp3,dat[dat$Month=="9",]$Day,mean))) -->
+<!-- tdm09$Day<-as.numeric(tdm09$Day) -->
+<!-- plot(tdm09$Day,tdm09$MeanDay,type="l",ylim=range(c(tdm09$MeanDay-tdm09$sdDay,tdm09$MeanDay+tdm09$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm09$Day,tdm09$MeanDay-tdm09$sdDay,tdm09$Day,tdm09$MeanDay+tdm09$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### October -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm10<-data.frame(sdDay=tapply(dat[dat$Month=="10",]$Temp3,dat[dat$Month=="10",]$Day,sd),MeanDay=tapply(dat[dat$Month=="10",]$Temp3,dat[dat$Month=="10",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="10",]$Temp3,dat[dat$Month=="10",]$Day,mean))) -->
+<!-- tdm10$Day<-as.numeric(tdm10$Day) -->
+<!-- plot(tdm10$Day,tdm10$MeanDay,type="l",ylim=range(c(tdm10$MeanDay-tdm10$sdDay,tdm10$MeanDay+tdm10$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm10$Day,tdm10$MeanDay-tdm10$sdDay,tdm10$Day,tdm10$MeanDay+tdm10$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### November -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm11<-data.frame(sdDay=tapply(dat[dat$Month=="11",]$Temp3,dat[dat$Month=="11",]$Day,sd),MeanDay=tapply(dat[dat$Month=="11",]$Temp3,dat[dat$Month=="11",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="11",]$Temp3,dat[dat$Month=="11",]$Day,mean))) -->
+<!-- tdm11$Day<-as.numeric(tdm11$Day) -->
+<!-- plot(tdm11$Day,tdm11$MeanDay,type="l",ylim=range(c(tdm11$MeanDay-tdm11$sdDay,tdm11$MeanDay+tdm11$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm11$Day,tdm11$MeanDay-tdm11$sdDay,tdm11$Day,tdm11$MeanDay+tdm11$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### December -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm12<-data.frame(sdDay=tapply(dat[dat$Month=="12",]$Temp3,dat[dat$Month=="12",]$Day,sd),MeanDay=tapply(dat[dat$Month=="12",]$Temp3,dat[dat$Month=="12",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="12",]$Temp3,dat[dat$Month=="12",]$Day,mean))) -->
+<!-- tdm12$Day<-as.numeric(tdm12$Day) -->
+<!-- plot(tdm12$Day,tdm12$MeanDay,type="l",ylim=range(c(tdm12$MeanDay-tdm12$sdDay,tdm12$MeanDay+tdm12$sdDay)),xlab="Day",ylab="Top temperature") -->
+<!-- arrows(tdm12$Day,tdm12$MeanDay-tdm12$sdDay,tdm12$Day,tdm12$MeanDay+tdm12$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ## Mean daily Soil moisture {.tabset} -->
+<!-- ### January -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm01<-data.frame(sdDay=tapply(dat[dat$Month=="1",]$SoilMoisture,dat[dat$Month=="1",]$Day,sd),MeanDay=tapply(dat[dat$Month=="1",]$SoilMoisture,dat[dat$Month=="1",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="1",]$SoilMoisture,dat[dat$Month=="1",]$Day,mean))) -->
+<!-- tdm01$Day<-as.numeric(tdm01$Day) -->
+<!-- plot(tdm01$Day,tdm01$MeanDay,type="l",ylim=range(c(tdm01$MeanDay-tdm01$sdDay,tdm01$MeanDay+tdm01$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm01$Day,tdm01$MeanDay-tdm01$sdDay,tdm01$Day,tdm01$MeanDay+tdm01$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### February -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm02<-data.frame(sdDay=tapply(dat[dat$Month=="2",]$SoilMoisture,dat[dat$Month=="2",]$Day,sd),MeanDay=tapply(dat[dat$Month=="2",]$SoilMoisture,dat[dat$Month=="2",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="2",]$SoilMoisture,dat[dat$Month=="2",]$Day,mean))) -->
+<!-- tdm02$Day<-as.numeric(tdm02$Day) -->
+<!-- plot(tdm02$Day,tdm02$MeanDay,type="l",ylim=range(c(tdm02$MeanDay-tdm02$sdDay,tdm02$MeanDay+tdm02$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm02$Day,tdm02$MeanDay-tdm02$sdDay,tdm02$Day,tdm02$MeanDay+tdm02$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### March -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm03<-data.frame(sdDay=tapply(dat[dat$Month=="3",]$SoilMoisture,dat[dat$Month=="3",]$Day,sd),MeanDay=tapply(dat[dat$Month=="3",]$SoilMoisture,dat[dat$Month=="3",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="3",]$SoilMoisture,dat[dat$Month=="3",]$Day,mean))) -->
+<!-- tdm03$Day<-as.numeric(tdm03$Day) -->
+<!-- plot(tdm03$Day,tdm03$MeanDay,type="l",ylim=range(c(tdm03$MeanDay-tdm03$sdDay,tdm03$MeanDay+tdm03$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm03$Day,tdm03$MeanDay-tdm03$sdDay,tdm03$Day,tdm03$MeanDay+tdm03$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### April -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm04<-data.frame(sdDay=tapply(dat[dat$Month=="4",]$SoilMoisture,dat[dat$Month=="4",]$Day,sd),MeanDay=tapply(dat[dat$Month=="4",]$SoilMoisture,dat[dat$Month=="4",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="4",]$SoilMoisture,dat[dat$Month=="4",]$Day,mean))) -->
+<!-- tdm04$Day<-as.numeric(tdm04$Day) -->
+<!-- plot(tdm04$Day,tdm04$MeanDay,type="l",ylim=range(c(tdm04$MeanDay-tdm04$sdDay,tdm04$MeanDay+tdm04$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm04$Day,tdm04$MeanDay-tdm04$sdDay,tdm04$Day,tdm04$MeanDay+tdm04$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### May -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm05<-data.frame(sdDay=tapply(dat[dat$Month=="5",]$SoilMoisture,dat[dat$Month=="5",]$Day,sd),MeanDay=tapply(dat[dat$Month=="5",]$SoilMoisture,dat[dat$Month=="5",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="5",]$SoilMoisture,dat[dat$Month=="5",]$Day,mean))) -->
+<!-- tdm05$Day<-as.numeric(tdm05$Day) -->
+<!-- plot(tdm05$Day,tdm05$MeanDay,type="l",ylim=range(c(tdm05$MeanDay-tdm05$sdDay,tdm05$MeanDay+tdm05$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm05$Day,tdm05$MeanDay-tdm05$sdDay,tdm05$Day,tdm05$MeanDay+tdm05$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### June -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm06<-data.frame(sdDay=tapply(dat[dat$Month=="6",]$SoilMoisture,dat[dat$Month=="6",]$Day,sd),MeanDay=tapply(dat[dat$Month=="6",]$SoilMoisture,dat[dat$Month=="6",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="6",]$SoilMoisture,dat[dat$Month=="6",]$Day,mean))) -->
+<!-- tdm06$Day<-as.numeric(tdm06$Day) -->
+<!-- plot(tdm06$Day,tdm06$MeanDay,type="l",ylim=range(c(tdm06$MeanDay-tdm06$sdDay,tdm06$MeanDay+tdm06$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm06$Day,tdm06$MeanDay-tdm06$sdDay,tdm06$Day,tdm06$MeanDay+tdm06$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### July -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm07<-data.frame(sdDay=tapply(dat[dat$Month=="7",]$SoilMoisture,dat[dat$Month=="7",]$Day,sd),MeanDay=tapply(dat[dat$Month=="7",]$SoilMoisture,dat[dat$Month=="7",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="7",]$SoilMoisture,dat[dat$Month=="7",]$Day,mean))) -->
+<!-- tdm07$Day<-as.numeric(tdm07$Day) -->
+<!-- plot(tdm07$Day,tdm07$MeanDay,type="l",ylim=range(c(tdm07$MeanDay-tdm07$sdDay,tdm07$MeanDay+tdm07$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm07$Day,tdm07$MeanDay-tdm07$sdDay,tdm07$Day,tdm07$MeanDay+tdm07$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### August -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm08<-data.frame(sdDay=tapply(dat[dat$Month=="8",]$SoilMoisture,dat[dat$Month=="8",]$Day,sd),MeanDay=tapply(dat[dat$Month=="8",]$SoilMoisture,dat[dat$Month=="8",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="8",]$SoilMoisture,dat[dat$Month=="8",]$Day,mean))) -->
+<!-- tdm08$Day<-as.numeric(tdm08$Day) -->
+<!-- plot(tdm08$Day,tdm08$MeanDay,type="l",ylim=range(c(tdm08$MeanDay-tdm08$sdDay,tdm08$MeanDay+tdm08$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm08$Day,tdm08$MeanDay-tdm08$sdDay,tdm08$Day,tdm08$MeanDay+tdm08$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### September -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm09<-data.frame(sdDay=tapply(dat[dat$Month=="9",]$SoilMoisture,dat[dat$Month=="9",]$Day,sd),MeanDay=tapply(dat[dat$Month=="9",]$SoilMoisture,dat[dat$Month=="9",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="9",]$SoilMoisture,dat[dat$Month=="9",]$Day,mean))) -->
+<!-- tdm09$Day<-as.numeric(tdm09$Day) -->
+<!-- plot(tdm09$Day,tdm09$MeanDay,type="l",ylim=range(c(tdm09$MeanDay-tdm09$sdDay,tdm09$MeanDay+tdm09$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm09$Day,tdm09$MeanDay-tdm09$sdDay,tdm09$Day,tdm09$MeanDay+tdm09$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### October -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm10<-data.frame(sdDay=tapply(dat[dat$Month=="10",]$SoilMoisture,dat[dat$Month=="10",]$Day,sd),MeanDay=tapply(dat[dat$Month=="10",]$SoilMoisture,dat[dat$Month=="10",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="10",]$SoilMoisture,dat[dat$Month=="10",]$Day,mean))) -->
+<!-- tdm10$Day<-as.numeric(tdm10$Day) -->
+<!-- plot(tdm10$Day,tdm10$MeanDay,type="l",ylim=range(c(tdm10$MeanDay-tdm10$sdDay,tdm10$MeanDay+tdm10$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm10$Day,tdm10$MeanDay-tdm10$sdDay,tdm10$Day,tdm10$MeanDay+tdm10$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### November -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm11<-data.frame(sdDay=tapply(dat[dat$Month=="11",]$SoilMoisture,dat[dat$Month=="11",]$Day,sd),MeanDay=tapply(dat[dat$Month=="11",]$SoilMoisture,dat[dat$Month=="11",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="11",]$SoilMoisture,dat[dat$Month=="11",]$Day,mean))) -->
+<!-- tdm11$Day<-as.numeric(tdm11$Day) -->
+<!-- plot(tdm11$Day,tdm11$MeanDay,type="l",ylim=range(c(tdm11$MeanDay-tdm11$sdDay,tdm11$MeanDay+tdm11$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm11$Day,tdm11$MeanDay-tdm11$sdDay,tdm11$Day,tdm11$MeanDay+tdm11$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+<!-- ### December -->
+<!-- ```{r,echo=FALSE} -->
+<!-- tdm12<-data.frame(sdDay=tapply(dat[dat$Month=="12",]$SoilMoisture,dat[dat$Month=="12",]$Day,sd),MeanDay=tapply(dat[dat$Month=="12",]$SoilMoisture,dat[dat$Month=="12",]$Day,mean),Day=row.names(tapply(dat[dat$Month=="12",]$SoilMoisture,dat[dat$Month=="12",]$Day,mean))) -->
+<!-- tdm12$Day<-as.numeric(tdm12$Day) -->
+<!-- plot(tdm12$Day,tdm12$MeanDay,type="l",ylim=range(c(tdm12$MeanDay-tdm12$sdDay,tdm12$MeanDay+tdm12$sdDay)),xlab="Day",ylab="Soil moisture") -->
+<!-- arrows(tdm12$Day,tdm12$MeanDay-tdm12$sdDay,tdm12$Day,tdm12$MeanDay+tdm12$sdDay, code=3, angle=90, length=0.05) -->
+<!-- ``` -->
+</div>
+</div>
 </div>
 
 

@@ -1,12 +1,11 @@
 ---
-title: "Index"
+title: "TMS4 datalogger instructions"
 output: html_document
 ---
-# TMS Datalogger instructions
 
 ## TMS4 general information
 
-The TMS4 dataloggers offer the unique possibility to precisely measure air and soil temperature as well as soil moisture in the field. For more information about it's specifications, durability, price and installation visit the TOMST website: [https://tomst.com/web/en/systems/tms/tms-4/].
+<!-- The TMS4 dataloggers offer the unique possibility to precisely measure air and soil temperature as well as soil moisture in the field. For more information about it's specifications, durability, price and installation visit the TOMST website: [https://tomst.com/web/en/systems/tms/tms-4/]. -->
 
 ## Lolly software download and installation
 

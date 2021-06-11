@@ -285,9 +285,6 @@ $(document).ready(function () {
         <li>
   <a href="index.html">First test</a>
 </li>
-<li>
-  <a href="TMS4instruc.html">TMS4 instructions</a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -307,14 +304,144 @@ $(document).ready(function () {
 
 <div id="data-exploration" class="section level1">
 <h1>Data exploration</h1>
-<!-- Using R software is a great way to visualize the temperature and soil moisture data by years, months and days.  -->
-<p>Here are basic graphics the difference in measurements between dataloggers and the difference between temperature 1, 2 and 3 (<em>i.e.</em>, soil, ground and aboveground).</p>
-<div id="soil-middle-and-top-temperature-by-each-datalogger" class="section level2">
-<h2>Soil, middle and top temperature by each datalogger</h2>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-2.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-3.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-4.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-5.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-6.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-7.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-8.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-2-9.png" width="672" /></p>
+<p>I got 10 TMS4 sensors (<a href="https://tomst.com/web/en/systems/tms/tms-4/">website</a>) from a SoilTemp (<a href="https://soiltemp.weebly.com/">website</a>) call. One of the sensors doesn’t work so I did preliminary tests with 9. These sensors are set to sample every 15 min and measures 3 temperatures (soil, ground and 10cm above the ground) and soil moisture:</p>
+<p><img src="Images/tms4_measure.png" style="width:20.0%" /></p>
+<p>The idea was to place the sensors in the Botanical Gardens of Cartagena but the day I planned to go, there were road blockages from the national strike. So, I ended up placing them sensors in the gardens of the building I live in. I chose 5 treatments:</p>
+<div id="grass-x2" class="section level2">
+<h2>Grass (x2)</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="Images/treatments/ctg_open" style="width:50.0%" /></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="measurements-between-dataloggers" class="section level2 tabset">
-<h2 class="tabset">Measurements between dataloggers</h2>
+<div id="bushes-x2" class="section level2">
+<h2>Bushes (x2)</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="Images/treatments/ctg_bushes1" style="width:50.0%" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="wall-shadow-x2" class="section level2">
+<h2>Wall (shadow) (x2)</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="Images/treatments/ctg_wall1" /></td>
+<td align="center"><img src="Images/treatments/ctg_wall2" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="palm-undestory-x2" class="section level2">
+<h2>Palm undestory (x2)</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="Images/treatments/ctg_palm1" /></td>
+<td align="center"><img src="Images/treatments/ctg_palm2" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="air--not-buried--x1" class="section level2">
+<h2>Air -not buried- (x1)</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="Images/treatments/ctg_air1" /></td>
+<td align="center"><img src="Images/treatments/ctg_air2" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="data-exploration-1" class="section level1">
+<h1>Data exploration</h1>
+<!-- Using R software is a great way to visualize the temperature and soil moisture data by years, months and days.  -->
+<p>Here are some figures from the prelimi the difference in measurements between dataloggers and the difference between temperature 1, 2 and 3 (<em>i.e.</em>, soil, ground and aboveground).</p>
+<div id="each-sensor" class="section level2">
+<h2>Each sensor</h2>
+</div>
+<div id="section" class="section level2 tabset">
+<h2 class="tabset"></h2>
+<div id="grass" class="section level3">
+<h3>94202093 - Grass</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="grass-1" class="section level3">
+<h3>94202100 - Grass</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+</div>
+<div id="wall" class="section level3">
+<h3>94202096 - Wall</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-3.png" width="672" /></p>
+</div>
+<div id="wall-1" class="section level3">
+<h3>94202098 - Wall</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-4.png" width="672" /></p>
+</div>
+<div id="palm" class="section level3">
+<h3>94202094 - Palm</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-5.png" width="672" /></p>
+</div>
+<div id="palm-1" class="section level3">
+<h3>94202095 - Palm</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-6.png" width="672" /></p>
+</div>
+<div id="bushes" class="section level3">
+<h3>94202092 - Bushes</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-7.png" width="672" /></p>
+</div>
+<div id="bushes-1" class="section level3">
+<h3>94202099 - Bushes</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-8.png" width="672" /></p>
+</div>
+<div id="air" class="section level3">
+<h3>94202091 - Air</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-2-9.png" width="672" /></p>
+<!-- ## Measurements between dataloggers {.tabset} -->
+<!-- ### Soil temperature -->
+<!-- ```{r,echo=FALSE} -->
+<!-- plot(datum[condi,c("ID","Temp1")],col=NA,xlim=c(46025,47700),ylab="Soil temperature") -->
+<!-- for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp1,type="l",col=rainbow(n=9)[i])) -->
+<!-- abline(v=62+0:1000*96,col="grey",lty=1) -->
+<!-- abline(v=14+0:1000*96,col="darkgoldenrod",lty=2) -->
+<!-- legend("topright",legend=c(unique(datum$Sensor)),col=c(rainbow(n=9)),lty=1,bty="n",cex=0.7) -->
+<!-- ``` -->
+<!-- ### Middle temperature  -->
+<!-- ```{r,echo=FALSE} -->
+<!-- plot(datum[condi,c("ID","Temp2")],col=NA,xlim=c(46025,47700),ylab="Mid temperature") -->
+<!-- for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp2,type="l",col=rainbow(n=9)[i])) -->
+<!-- abline(v=62+0:1000*96,col="grey",lty=1) -->
+<!-- abline(v=14+0:1000*96,col="darkgoldenrod",lty=2) -->
+<!-- legend("topright",legend=c(unique(datum$Sensor)),col=c(rainbow(n=9)),lty=1,bty="n",cex=0.7) -->
+<!-- ``` -->
+<!-- ### Top temperature -->
+<!-- ```{r,echo=FALSE} -->
+<!-- plot(datum[condi,c("ID","Temp3")],col=NA,xlim=c(46025,47700),ylab="Top temperature") -->
+<!-- for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp3,type="l",col=rainbow(n=9)[i])) -->
+<!-- abline(v=42+0:1000*96,col="grey",lty=1) -->
+<!-- abline(v=-6+0:1000*96,col="darkgoldenrod",lty=2) -->
+<!-- legend("topright",legend=c(unique(datum$Sensor)),col=c(rainbow(n=9)),lty=1,bty="n",cex=0.7) -->
+<!-- ``` -->
+<!-- ### Soil moisture  -->
+<!-- ```{r,echo=FALSE} -->
+<!-- plot(datum[condi,c("ID","SoilMoisture")],col=NA) -->
+<!-- for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,SoilMoisture,type="l",col=rainbow(n=9)[i])) -->
+<!-- abline(v=62+0:1000*96,col="grey",lty=1) -->
+<!-- abline(v=14+0:1000*96,col="darkgoldenrod",lty=2) -->
+<!-- legend("topright",legend=c(unique(datum$Sensor)),col=c(rainbow(n=9)),lty=1,bty="n",cex=0.7) -->
+<!-- ``` -->
+</div>
+</div>
+<div id="measurements-between-treatments" class="section level2 tabset">
+<h2 class="tabset">Measurements between treatments</h2>
 <div id="soil-temperature" class="section level3">
 <h3>Soil temperature</h3>
 <p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
@@ -328,103 +455,84 @@ $(document).ready(function () {
 <p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 <div id="soil-moisture" class="section level3">
-<h3>Soil moisture</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-</div>
-</div>
-<div id="measurements-between-experimental-treatments" class="section level2 tabset">
-<h2 class="tabset">Measurements between experimental treatments</h2>
-<div id="soil-temperature-1" class="section level3">
-<h3>Soil temperature</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-</div>
-<div id="middle-temperature-1" class="section level3">
-<h3>Middle temperature</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-</div>
-<div id="top-temperature-1" class="section level3">
-<h3>Top temperature</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-</div>
-<div id="soil-moisture-1" class="section level3">
 <h3>Soil Moisture</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 </div>
 <div id="soil-temperature-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
 <h2 class="tabset">Soil temperature between dataloggers in the same treatment</h2>
-<div id="pasto" class="section level3">
-<h3>Pasto</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<div id="grass-2" class="section level3">
+<h3>Grass</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
-<div id="muro" class="section level3">
-<h3>Muro</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<div id="wall-2" class="section level3">
+<h3>Wall</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 </div>
-<div id="palma" class="section level3">
-<h3>Palma</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<div id="palm-2" class="section level3">
+<h3>Palm</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 </div>
-<div id="arbustos" class="section level3">
-<h3>Arbustos</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<div id="bushes-2" class="section level3">
+<h3>Bushes</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 </div>
 <div id="middle-temperature-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
 <h2 class="tabset">Middle temperature between dataloggers in the same treatment</h2>
-<div id="pasto-1" class="section level3">
-<h3>Pasto</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<div id="grass-3" class="section level3">
+<h3>Grass</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 </div>
-<div id="muro-1" class="section level3">
-<h3>Muro</h3>
+<div id="wall-3" class="section level3">
+<h3>Wall</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+</div>
+<div id="palm-3" class="section level3">
+<h3>Palm</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+</div>
+<div id="bushes-3" class="section level3">
+<h3>Bushes</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+</div>
+</div>
+<div id="top-temperature-between-pairs-in-the-same-treatment" class="section level2 tabset">
+<h2 class="tabset">Top temperature between pairs in the same treatment</h2>
+<div id="grass-4" class="section level3">
+<h3>Grass</h3>
 <p><img src="index_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 </div>
-<div id="palma-1" class="section level3">
-<h3>Palma</h3>
+<div id="wall-4" class="section level3">
+<h3>Wall</h3>
 <p><img src="index_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 </div>
-<div id="arbustos-1" class="section level3">
-<h3>Arbustos</h3>
+<div id="palm-4" class="section level3">
+<h3>Palm</h3>
 <p><img src="index_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 </div>
-</div>
-<div id="top-temperature-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
-<h2 class="tabset">Top temperature between dataloggers in the same treatment</h2>
-<div id="pasto-2" class="section level3">
-<h3>Pasto</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
-</div>
-<div id="muro-2" class="section level3">
-<h3>Muro</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
-</div>
-<div id="palma-2" class="section level3">
-<h3>Palma</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
-</div>
-<div id="arbustos-2" class="section level3">
-<h3>Arbustos</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<div id="bushes-4" class="section level3">
+<h3>Bushes</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 </div>
 </div>
 <div id="soil-moisture-between-dataloggers-in-the-same-treatment" class="section level2 tabset">
 <h2 class="tabset">Soil moisture between dataloggers in the same treatment</h2>
-<div id="pasto-3" class="section level3">
-<h3>Pasto</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<div id="grass-5" class="section level3">
+<h3>Grass</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
 </div>
-<div id="muro-3" class="section level3">
-<h3>Muro</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<div id="wall-5" class="section level3">
+<h3>Wall</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 </div>
-<div id="palma-3" class="section level3">
-<h3>Palma</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<div id="palm-5" class="section level3">
+<h3>Palm</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 </div>
-<div id="arbustos-3" class="section level3">
-<h3>Arbustos</h3>
-<p><img src="index_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<div id="bushes-5" class="section level3">
+<h3>Bushes</h3>
+<p><img src="index_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 <!-- # Temperature and soil moisture time variation -->
 <!-- ## Mean month temperature and soil moisture {.tabset} -->
 <!-- ```{r,include=FALSE} -->

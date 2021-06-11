@@ -5,5 +5,5 @@ navbar:
   left:
     - text: "First test"
       href: index.html
-    - text: "TMS4 instructions"
-      href: TMS4instruc.html
+    # - text: "TMS4 instructions"
+    #   href: TMS4instruc.html

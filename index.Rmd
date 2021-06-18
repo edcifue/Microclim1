@@ -59,14 +59,14 @@ datum$ID<-as.integer(factor(datum$Date))
 length(unique(datum$ID))
 
 ### Comparar temp1,2 y 3 del mismo datalogger----
-condi<-datum$ID%in%(46025:47500)
+condi<-datum$ID%in%(46325:47500)
 unique(datum$Date[condi])
 rango<-range(datum[condi,c("Temp1","Temp2","Temp3")])
 
 table(substr(datum$Date[datum$ID%in%(62+0:1000*96)],12,16))
 table(substr(datum$Date[datum$ID%in%(14+0:1000*96)],12,16))
 
-idtreat <- data.frame(sensorid=c(94202093,94202100,94202096,94202098,94202094,94202095,94202092,94202099,94202091),treat=c('Grass','Grass','Wall','Wall','Palm','Palm','Bushes','Bushes','Air'))
+idtreat <- data.frame(sensorid=c(94202093,94202100,94202096,94202098,94202094,94202095,94202092,94202099,94202091),treat=c('Grass','Grass','Wall','Wall','Palm','Palm','Bushes','Bushes','Air-not buried'))
 ```
 
 ## Each sensor
@@ -93,7 +93,7 @@ for(i in idtreat$sensorid) {
 <!-- ### Soil temperature -->
 
 <!-- ```{r,echo=FALSE} -->
-<!-- plot(datum[condi,c("ID","Temp1")],col=NA,xlim=c(46025,47700),ylab="Soil temperature") -->
+<!-- plot(datum[condi,c("ID","Temp1")],col=NA,xlim=c(46325,47500),ylab="Soil temperature") -->
 <!-- for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp1,type="l",col=rainbow(n=9)[i])) -->
 <!-- abline(v=62+0:1000*96,col="grey",lty=1) -->
 <!-- abline(v=14+0:1000*96,col="darkgoldenrod",lty=2) -->
@@ -105,7 +105,7 @@ for(i in idtreat$sensorid) {
 <!-- ### Middle temperature  -->
 
 <!-- ```{r,echo=FALSE} -->
-<!-- plot(datum[condi,c("ID","Temp2")],col=NA,xlim=c(46025,47700),ylab="Mid temperature") -->
+<!-- plot(datum[condi,c("ID","Temp2")],col=NA,xlim=c(46325,47500),ylab="Mid temperature") -->
 <!-- for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp2,type="l",col=rainbow(n=9)[i])) -->
 <!-- abline(v=62+0:1000*96,col="grey",lty=1) -->
 <!-- abline(v=14+0:1000*96,col="darkgoldenrod",lty=2) -->
@@ -117,7 +117,7 @@ for(i in idtreat$sensorid) {
 <!-- ### Top temperature -->
 
 <!-- ```{r,echo=FALSE} -->
-<!-- plot(datum[condi,c("ID","Temp3")],col=NA,xlim=c(46025,47700),ylab="Top temperature") -->
+<!-- plot(datum[condi,c("ID","Temp3")],col=NA,xlim=c(46325,47500),ylab="Top temperature") -->
 <!-- for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp3,type="l",col=rainbow(n=9)[i])) -->
 <!-- abline(v=42+0:1000*96,col="grey",lty=1) -->
 <!-- abline(v=-6+0:1000*96,col="darkgoldenrod",lty=2) -->
@@ -144,44 +144,44 @@ for(i in idtreat$sensorid) {
 ### Soil temperature
 
 ```{r,echo=FALSE}
-plot(datum[condi,c("ID","Temp1")],col=NA,xlim=c(46025,47700),ylab="Soil temperature")
+plot(datum[condi,c("ID","Temp1")],col=NA,xlim=c(46325,47500),ylab="Soil temperature", ylim=rango)
 for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp1,type="l",col=c("red","darkgoldenrod4","forestgreen","dodgerblue","dodgerblue","darkorchid","darkorchid","darkgoldenrod4","forestgreen")[i]))
 abline(v=62+0:1000*96,col="grey",lty=1)
 abline(v=14+0:1000*96,col="darkgoldenrod",lty=2)
-legend("topright",legend=c("Grass","Palm under.","Colgado","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
+legend("topright",legend=c("Grass","Palm under.","Air","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
 
 ```
 
 ### Middle temperature
 
 ```{r,echo=FALSE}
-plot(datum[condi,c("ID","Temp2")],col=NA,xlim=c(46025,47700),ylab="Mid temperature")
+plot(datum[condi,c("ID","Temp2")],col=NA,xlim=c(46325,47500),ylab="Mid temperature", ylim=rango)
 for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp2,type="l",col=c("red","darkgoldenrod4","forestgreen","dodgerblue","dodgerblue","darkorchid","darkorchid","darkgoldenrod4","forestgreen")[i]))
 abline(v=62+0:1000*96,col="grey",lty=1)
 abline(v=14+0:1000*96,col="black",lty=2)
-legend("topright",legend=c("Grass","Palm under.","Colgado","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
+legend("topright",legend=c("Grass","Palm under.","Air","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
 
 ```
 
 ### Top temperature
 
 ```{r,echo=FALSE}
-plot(datum[condi,c("ID","Temp3")],col=NA,xlim=c(46025,47700),ylab="Top temperature")
+plot(datum[condi,c("ID","Temp3")],col=NA,xlim=c(46325,47500),ylab="Top temperature", ylim=rango)
 for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,Temp3,type="l",col=c("red","darkgoldenrod4","forestgreen","dodgerblue","dodgerblue","darkorchid","darkorchid","darkgoldenrod4","forestgreen")[i]))
 abline(v=62+0:1000*96,col="grey",lty=1)
 abline(v=14+0:1000*96,col="darkgoldenrod",lty=2)
-legend("topright",legend=c("Grass","Palm under.","Colgado","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
+legend("topright",legend=c("Grass","Palm under.","Air","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
 
 ```
 
 ### Soil Moisture
 
 ```{r,echo=FALSE}
-plot(datum[condi,c("ID","SoilMoisture")],col=NA,xlim=c(46025,47700),ylab="Soil moisture")
+plot(datum[condi,c("ID","SoilMoisture")],col=NA,xlim=c(46325,47500),ylab="Soil moisture")
 for(i in 1:length(unique(datum$Sensor))) with(datum[condi & datum$Sensor==unique(datum$Sensor)[i],],lines(ID,SoilMoisture,type="l",col=c("red","darkgoldenrod4","forestgreen","dodgerblue","dodgerblue","darkorchid","darkorchid","darkgoldenrod4","forestgreen")[i]))
 abline(v=62+0:1000*96,col="grey",lty=1)
 abline(v=14+0:1000*96,col="darkgoldenrod",lty=2)
-legend("topright",legend=c("Grass","Palm under.","Colgado","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
+legend("topright",legend=c("Grass","Palm under.","Air","Bushes","Wall"),col=c("forestgreen","dodgerblue","red","darkgoldenrod4","darkorchid"),lty=1,bty="n",cex=0.7)
 
 ```
 
@@ -197,7 +197,7 @@ dt <- datum[condi,c("ID","Temp1","Sensor")]
 
 ```{r,echo=FALSE}
 
-plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202100",]$ID,dt[dt$Sensor=="94202100",]$Temp1,col="blue")
 legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -207,7 +207,7 @@ legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 
-plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202098",]$ID,dt[dt$Sensor=="94202098",]$Temp1,col="blue")
 legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -217,7 +217,7 @@ legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Palm
-plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202095",]$ID,dt[dt$Sensor=="94202095",]$Temp1,col="blue")
 legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -227,9 +227,18 @@ legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Bushes
-plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202099",]$ID,dt[dt$Sensor=="94202099",]$Temp1,col="blue")
 legend("topright",legend=c("94202092","94202099"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
+
+```
+
+### Air-not buried
+
+```{r,echo=FALSE}
+##Bushes
+plot(dt[dt$Sensor=="94202091",]$ID,dt[dt$Sensor=="94202091",]$Temp1,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
+legend("topright",legend=c("94202091"),col=c("red"),lty=1,bty="n",cex=0.7)
 
 ```
 
@@ -244,7 +253,7 @@ dt<-datum[condi,c("ID","Temp2","Sensor")]
 
 ```{r,echo=FALSE}
 ##Grass
-plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202100",]$ID,dt[dt$Sensor=="94202100",]$Temp2,col="blue")
 legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -254,7 +263,7 @@ legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Wall
-plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202098",]$ID,dt[dt$Sensor=="94202098",]$Temp2,col="blue")
 legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -264,7 +273,7 @@ legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Palm
-plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202095",]$ID,dt[dt$Sensor=="94202095",]$Temp2,col="blue")
 legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -274,16 +283,26 @@ legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Bushes
-plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202099",]$ID,dt[dt$Sensor=="94202099",]$Temp2,col="blue")
 legend("topright",legend=c("94202092","94202099"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
 ```
 
+### Air-not buried
+
+```{r,echo=FALSE}
+##Bushes
+plot(dt[dt$Sensor=="94202091",]$ID,dt[dt$Sensor=="94202091",]$Temp2,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
+legend("topright",legend=c("94202091"),col=c("red"),lty=1,bty="n",cex=0.7)
+
+```
+
+
 ## Top temperature between pairs in the same treatment {.tabset}
 
 ```{r,include=FALSE}
-dt<-datum[condi,c("ID","Temp3","Sensor")] 
+dt <- datum[condi,c("ID","Temp3","Sensor")] 
 
 ```
 
@@ -291,7 +310,7 @@ dt<-datum[condi,c("ID","Temp3","Sensor")]
 
 ```{r,echo=FALSE}
 ##Grass
-plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202100",]$ID,dt[dt$Sensor=="94202100",]$Temp3,col="blue")
 legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -301,7 +320,7 @@ legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Wall
-plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202098",]$ID,dt[dt$Sensor=="94202098",]$Temp3,col="blue")
 legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -311,7 +330,7 @@ legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Palm
-plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202095",]$ID,dt[dt$Sensor=="94202095",]$Temp3,col="blue")
 legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -321,9 +340,18 @@ legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Bushes
-plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
 lines(dt[dt$Sensor=="94202099",]$ID,dt[dt$Sensor=="94202099",]$Temp3,col="blue")
 legend("topright",legend=c("94202092","94202099"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
+
+```
+
+### Air-not buried
+
+```{r,echo=FALSE}
+##Bushes
+plot(dt[dt$Sensor=="94202091",]$ID,dt[dt$Sensor=="94202091",]$Temp3,type="l",col="red",ylab="Temperature",xlab="ID", ylim=rango)
+legend("topright",legend=c("94202091"),col=c("red"),lty=1,bty="n",cex=0.7)
 
 ```
 
@@ -331,6 +359,7 @@ legend("topright",legend=c("94202092","94202099"),col=c("red","blue"),lty=1,bty=
 
 ```{r,include=FALSE}
 dt<-datum[condi,c("ID","SoilMoisture","Sensor")] 
+soilrange <- range(dt$SoilMoisture)
 
 ```
 
@@ -338,7 +367,7 @@ dt<-datum[condi,c("ID","SoilMoisture","Sensor")]
 
 ```{r,echo=FALSE}
 ##Grass
-plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202093",]$ID,dt[dt$Sensor=="94202093",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID", ylim = soilrange)
 lines(dt[dt$Sensor=="94202100",]$ID,dt[dt$Sensor=="94202100",]$SoilMoisture,col="blue")
 legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -348,7 +377,7 @@ legend("topright",legend=c("94202093","94202100"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Wall
-plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202096",]$ID,dt[dt$Sensor=="94202096",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID", ylim = soilrange)
 lines(dt[dt$Sensor=="94202098",]$ID,dt[dt$Sensor=="94202098",]$SoilMoisture,col="blue")
 legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -358,7 +387,7 @@ legend("topright",legend=c("94202096","94202098"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Palm
-plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202094",]$ID,dt[dt$Sensor=="94202094",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID", ylim = soilrange)
 lines(dt[dt$Sensor=="94202095",]$ID,dt[dt$Sensor=="94202095",]$SoilMoisture,col="blue")
 legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
 
@@ -368,9 +397,18 @@ legend("topright",legend=c("94202094","94202095"),col=c("red","blue"),lty=1,bty=
 
 ```{r,echo=FALSE}
 ##Bushes
-plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID")
+plot(dt[dt$Sensor=="94202092",]$ID,dt[dt$Sensor=="94202092",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID", ylim = soilrange)
 lines(dt[dt$Sensor=="94202099",]$ID,dt[dt$Sensor=="94202099",]$SoilMoisture,col="blue")
 legend("topright",legend=c("94202092","94202099"),col=c("red","blue"),lty=1,bty="n",cex=0.7)
+
+```
+
+### Air-not buried
+
+```{r,echo=FALSE}
+##Bushes
+plot(dt[dt$Sensor=="94202091",]$ID,dt[dt$Sensor=="94202091",]$SoilMoisture,type="l",col="red",ylab="Temperature",xlab="ID", ylim = soilrange)
+legend("topright",legend=c("94202091"),col=c("red"),lty=1,bty="n",cex=0.7)
 
 ```
 
